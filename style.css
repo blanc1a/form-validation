@@ -1,0 +1,106 @@
+@import url(https://fonts.bunny.net/css?family=raleway:400);
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px; /*great for labels and titels*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* background: url(https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+  background: url(https://images.unsplash.com/photo-1613947327443-5e7ba688df4a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.formContainer {
+  width: 30rem;
+  height: 30rem;
+  background-color: rgba(245, 245, 245, 0.9);
+  padding: 5rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 10px rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #401a25;
+  font-weight: 900;
+}
+
+form {
+  width: 90%;
+}
+
+.form-group {
+  height: 65px;
+}
+
+label {
+  color: #401a25;
+  font-weight: 600;
+  position: relative;
+  bottom: 3px;
+}
+
+input {
+  width: 100%;
+  height: 34px;
+  padding: 5px;
+  border: 1px solid #401a25;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  /*without the box-sizing, the height and padding would be pushing the element to be more than the 100% of the width!*/
+  transform: all 0.3s;
+}
+
+input:valid {
+  /*valid represents any input or form el whose contents validate successfully => makes valid fields adopt an appearance that helps user confirm that their data is formatted properly*/
+  border: 1.5px solid darkgreen;
+}
+
+input:invalid {
+  border: 1.5px solid darkred;
+}
+
+button {
+  cursor: pointer;
+  color: whitesmoke;
+  background: #401a25;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  font-family: "Raleway", sans-serif; /*add again bc of the default values of button el*/
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+button:hover {
+  /* filter: brightness(200%); changes the brightness of the button */
+  background: rgba(75, 53, 63, 0.9);
+}
+
+button:focus {
+  outline: none;
+}
+
+.message-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
